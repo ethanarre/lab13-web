@@ -12,6 +12,9 @@ import { CrearCategoriaComponent } from './components/crear-categoria/crear-cate
 import { ListarCategoriaComponent } from './components/listar-categoria/listar-categoria.component';
 import { CategoriaComponent } from './services/categoria/categoria.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 
 @NgModule({
@@ -27,7 +30,9 @@ import { CategoriaComponent } from './services/categoria/categoria.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule, 
+    
   ],
   providers: [
     provideClientHydration()
